@@ -9,7 +9,6 @@ nav {
     background-color: #222852;
 }
 
-
 .logo-header {
     height: 70px;
     width: auto;
@@ -23,6 +22,17 @@ nav {
 
 }
 
+button {
+    color: #222852!important;
+    border: none!important;
+    background-image: url(/img/menu.svg) ;
+}
+
+button:visited {
+    color: #222852!important;
+    border: none!important;
+    background-image: url(/img/menu.svg);
+}
 
 
 /* estilos textos y principales*/
