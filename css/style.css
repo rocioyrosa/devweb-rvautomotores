@@ -1,0 +1,147 @@
+/* reseteo de body a full screen */
+* { margin: 0;
+    padding:0;
+}
+
+/* estilo header, imagen y enlaces */
+
+nav {
+    background-color: #222852;
+}
+
+
+.logo-header {
+    height: 70px;
+    width: auto;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+
+
+/* estilos textos y principales*/
+
+body {
+    background-color: #ececf1;
+}
+
+/* bannner principal */
+main {
+    background-image: url("../img/taller-mecanico.jpg");
+    background-size: cover;
+    height: 680px;
+    width: auto;
+}
+
+/* headings y textos principales */
+
+main h1,
+main h2 {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+h2,
+h3 {
+    color: #333366;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+
+p,
+form label {
+    color: #101010;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+/* listas */
+
+li {
+    color: #101010;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* formularios */
+
+form input,
+form input textarea {
+    color: #3f3f3f;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+
+
+
+/* imagenes */
+
+.article--img {
+    height: 300px;
+    width: auto;
+}
+
+
+/* boton de pedir presupuesto */
+
+.boton-presupuesto {
+    margin: 30px 30px;
+    background-color: #333366;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* tamaño de imágenes de seccion proveedores */
+
+.proveedores img {
+    height: 200;
+    width: auto;
+}
+
+/* estilos de footer */
+
+footer {
+    background-color: #333366;
+}
+
+footer img {
+    height: 90px;
+    width: auto;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer li {
+    list-style: none;
+    text-align: right;
+}
+
+footer li a {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
