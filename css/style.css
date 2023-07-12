@@ -1,5 +1,6 @@
 /* reseteo de body a full screen */
-* { margin: 0;
+* {
+    margin: 1;
     padding:0;
 }
 
@@ -7,7 +8,7 @@
 
 nav {
     background-color: #222852;
-}
+    z-index: 3}
 
 .logo-header {
     height: 70px;
@@ -25,13 +26,13 @@ nav {
 button {
     color: #222852!important;
     border: none!important;
-    background-image: url(/img/menu.svg) ;
+    background-image: url(./img/menu.svg) ;
 }
 
 button:visited {
     color: #222852!important;
     border: none!important;
-    background-image: url(/img/menu.svg);
+    background-image: url(./img/menu.svg);
 }
 
 
@@ -45,20 +46,52 @@ body {
 main {
     background-image: url("../img/taller-mecanico.jpg");
     background-size: cover;
+    background-position: center;
     height: 680px;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+main::before {
+    FONT-VARIANT: JIS83;
+    content: "";
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    background: radial-gradient(circle, rgb(0, 0, 0) 10%, #222852 35%, #ececf1 100%);
+    opacity: 0.6;
+    z-index: 1;
 }
 
 /* headings y textos principales */
 
-main h1,
-main h2 {
+.main__h1 {
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
+    padding-bottom: 10px;
+
 }
+
+.main__h2 {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 1;
+
+}
+
 
 
 h2,
@@ -78,80 +111,344 @@ form label {
 
 }
 
-/* listas */
+/* section nosotros */
+
+
+.section__nosotros {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nosotros__container {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-gap: 40px;
+    align-items: center;
+}
+
+.nosotros__img {
+    width: 100%;
+    height: auto;
+}
+
+.nosotros__content {
+    display: grid;
+    align-items: center;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .section__nosotros { 
+        padding-top: 0%;
+    }
+    .nosotros__container {
+        grid-template-columns: 100%;
+    }
+    .nosotros__content {
+        padding: 0% 20px 0% 20px;
+    }
+}
+
+/* section servicios */
+
+.section__servicios {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #222852;
+    
+}
+
+.servicios__container {
+    max-width: 750px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+.servicios__text {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .servicios__container {
+        padding: 0% 20px 0% 20px;
+    }
+}
+
+
+/* cards */
+
+.section__servicios-cards {
+    display: flex;
+    justify-content: center;
+    background-color: #222852;
+    padding-bottom: 60px;
+}
+
+.card-group {
+    max-width: 1300px;
+    gap: 30px;
+}
+
+.card {
+    border-color: #ececf100!important;
+    border-radius: 5px 5px 5px 5px!important;
+    border: none;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-img-top {
+    height: 297px;
+    width: auto;
+    border-color: #ececf100!important;
+    border-radius: 5px 5px 0px 0px!important;
+    border: none;
+}
+
+@media (max-width:1200px) {
+    .card-group {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100%;
+        padding: 0 10px 0 10px;
+    }
+    .section__servicios-cards {
+        padding-bottom: 20px;
+    }
+    
+}
+
+/* listas cards*/
 
 li {
     color: #101010;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 16px;
-}
-
-/* formularios */
-
-form input,
-form input textarea {
-    color: #3f3f3f;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-
-
-
-
-/* imagenes */
-
-.article--img {
-    height: 300px;
-    width: auto;
+    text-align: left;
 }
 
 
 /* boton de pedir presupuesto */
+.section__btn-presu {
+    display: flex;
+    justify-content: center;
+    background-color: #222852;
+    padding-bottom: 60px;
+}
 
-.boton-presupuesto {
-    margin: 30px 30px;
-    background-color: #333366;
-    color: #fff;
+.btn-light {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 15px 30px;
+    justify-self: center;
 }
+
+
 
 /* tamaño de imágenes de seccion proveedores */
 
-.proveedores img {
-    height: 200;
+.section__proveedores {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px 60px 20px;
+    flex-wrap: nowrap;
+}
+.proveedores__container {
+    justify-content: center;
+}
+
+.proveedores__galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.proveedores__img {
+    height: 180px;
     width: auto;
 }
 
-/* estilos de footer */
+@media (max-width: 768px) {
+    .proveedores__text {
+        padding: 0 60px 0 60px ;
+    }
+    .proveedores__galeria {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 0;
+    }
+    .proveedores__img {
+        max-width: 90%;
+        height: auto;
+        justify-self: center;
+    }
 
-footer {
-    background-color: #333366;
+}
+/* formularios */
+
+#contacto {
+    margin: 0 auto;
+    background-color: #3f3f3f;
 }
 
-footer img {
+.contacto__container {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+    justify-content: left;
+}
+
+.contacto__mapa {
+    height: 500px;
+    width: 800px;
+    justify-self: left;
+}
+
+.contacto__text h2, .contacto__text p {
+    color: #fff;
+}
+
+.contacto__formulario {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .contacto__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-input {
+    color: #3f3f3f;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    border-style: none;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.contacto__formulario form {
+    width: 400px;
+}
+
+.contacto__formulario #nombre,
+.contacto__formulario #telefono,
+.contacto__formulario #email,
+.contacto__formulario #consulta {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.contacto__formulario {
+    padding: 50px 20px 60px 20px;
+}
+
+
+
+
+
+/* estilos de footer */
+.footer__container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-items: center;
+    padding: 50px 30px 20px 30px;
+    background-color: #222852;
+}
+
+.footer__logo img {
     height: 90px;
     width: auto;
 }
 
-footer p {
-    font-size: 14px;
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-footer li {
-    list-style: none;
-    text-align: right;
-}
-
-footer li a {
+.footer__links a {
     color: #ffffff;
+    text-decoration: none;
+    text-align: right;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
+
+.footer__links {
+    grid-column: 3;
+}
+.footer__copyright {
+    grid-column: 2;
+}
+.footer__copyright p {
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        grid-template-columns: auto;
+        text-align: center;
+        row-gap: 15px;
+    }
+
+    .footer__links,
+    .footer__copyright {
+        grid-column: 1 / -1;
+        padding-top: 20px;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__links a {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+
