@@ -300,7 +300,7 @@ li {
 
 #contacto {
     margin: 0 auto;
-    background-color: #3f3f3f;
+    background-color: #222852;
 }
 
 .contacto__container {
@@ -312,8 +312,8 @@ li {
 }
 
 .contacto__mapa {
-    height: 500px;
-    width: 800px;
+    height: 525px;
+    width: 600px;
     justify-self: left;
 }
 
@@ -329,9 +329,15 @@ li {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .contacto__container {
         grid-template-columns: 1fr;
+    }
+
+    .contacto__mapa {
+        height: 500px;
+        width: 100%;
+        justify-self: left;
     }
 }
 
@@ -388,7 +394,7 @@ li {
     align-items: center;
     justify-items: center;
     padding: 50px 30px 20px 30px;
-    background-color: #222852;
+    background-color: #333366;
 }
 
 .footer__logo img {
@@ -420,7 +426,7 @@ li {
 }
 .footer__copyright p {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 @media (max-width: 768px) {
@@ -438,8 +444,7 @@ li {
 
     .footer__links {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
