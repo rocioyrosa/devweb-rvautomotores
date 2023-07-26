@@ -1,0 +1,57 @@
+// Mixins
+
+@mixin center-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-style($color, $font-family, $font-weight, $font-size) {
+    color: $color;
+    font-family: $font-family, sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin section-padding($top: 80px, $bottom: 60px) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin heading-styles {
+    color: $color-secondary;
+    font-family: $font-family-titles;
+    font-weight: map-get($font-weights, negrita);
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+}
+
+@mixin subheading-styles {
+    color: $color-title;
+    font-family: $font-family-titles;
+    font-size: 24px;
+    font-weight: map-get($font-weights, normal);
+    z-index: 1;
+}
+
+@mixin body-text-styles {
+    color: black;
+    font-family: $font-family-text;
+    font-weight: map-get($font-weights, claro);
+    font-size: $font-size-base;
+}
+
+@mixin list-item-styles {
+    color: black;
+    font-family: $font-family-text;
+    font-weight: map-get($font-weights, claro);
+    font-size: $font-size-base;
+    text-align: left;
+}
+
+@mixin padding-lateral-mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+}

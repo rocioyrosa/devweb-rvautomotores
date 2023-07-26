@@ -1,0 +1,66 @@
+/* estilos de footer */
+
+.footer__container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-items: center;
+    padding: 50px 30px 20px 30px;
+    background-color: $color-dark;
+
+    .footer__logo img {
+        height: 90px;
+        width: auto;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+        grid-column: 3;
+
+        a {
+            text-decoration: none;
+            text-align: right;
+            @include text-style($color-secondary, $font-family-text, normal, $font-size-base);
+        }
+    }
+
+    .footer__copyright {
+        grid-column: 2;
+
+        p {
+            color: $color-secondary;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer__container {
+            grid-template-columns: auto;
+            text-align: center;
+            row-gap: 15px;
+        }
+        .footer__logo {
+            align-self: center;
+        }
+
+        .footer__links,
+        .footer__copyright {
+            grid-column: 1 / -1;
+            padding-top: 20px;
+        }
+
+        .footer__links {
+            @include center-element;
+            gap: 10px;
+
+            a {
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+
+}

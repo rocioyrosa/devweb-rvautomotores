@@ -28,7 +28,7 @@
 <body>
 
     <!-- Inicio nav menu BS-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img class="logo-header" src="./img/logo-rv-servicios-del-automotor.png" alt=""> </a>
@@ -49,9 +49,9 @@
 
 
     <!-- Inicio Banner -->
-    <main class="px-5">
-        <h1 class="main__h1 px-2">RV Taller de Servicios Automores</h1>
-        <h2 class="main__h2 px-2">Mecánica ligera y service del automotor en Alta Gracia</h2>
+    <main class="banner">
+        <h1 class="banner__heading">RV Taller de Servicios Automores</h1>
+        <h2 class="banner__subheading">Mecánica ligera y service del automotor en Alta Gracia</h2>
     </main>
 
 
@@ -59,16 +59,16 @@
 
     <section class="section__nosotros" id="nosotros">
         <div class="nosotros__container">
-            <div class="nosotros__box-img">
-                <img class="nosotros__img" src="./img/mecanico-evaluando-motor.png" alt="">
+            <div class="nosotros__box">
+                <img class="nosotros__box__img" src="./img/mecanico-evaluando-motor.png" alt="">
             </div>
             <div class="nosotros__content">
-                <h2>Sobre Nosotros</h2>
-                <p>Somos tu solución confiable y profesional para todas tus necesidades de mantenimiento y reparación de
-                    automóviles. Nuestro equipo de mecánicos altamente capacitados y con amplia experiencia está listo
-                    para brindarte un servicio excepcional y de calidad. Ya sea que necesites un simple cambio de aceite
-                    o una reparación más compleja, estamos aquí para ayudarte a mantener tu vehículo en óptimas
-                    condiciones.</p>
+                <h2 class="nosotros__content-title">Sobre Nosotros</h2>
+                <p class="nosotros__content-text">Somos tu solución confiable y profesional para todas tus necesidades
+                    de mantenimiento y reparación de automóviles. Nuestro equipo de mecánicos altamente capacitados y
+                    con amplia experiencia está listo para brindarte un servicio excepcional y de calidad. Ya sea que
+                    necesites un simple cambio de aceite o una reparación más compleja, estamos aquí para ayudarte a
+                    mantener tu vehículo en óptimas condiciones.</p>
             </div>
         </div>
     </section>
@@ -78,67 +78,67 @@
 
     <section class="section__servicios" id="servicios">
         <div class="servicios__container">
-            <h2 class="servicios__text">Servicios</h2>
-            <p class="servicios__text">En el Taller Mecánico RV Servicios Automores, ofrecemos una amplia gama de
-                servicios de automotor y
-                mecánica ligera para satisfacer todas tus necesidades.</p>
+            <h2 class="servicios__container-title">Servicios</h2>
+            <p class="servicios__container-text">En el Taller Mecánico RV Servicios Automores, ofrecemos una amplia gama
+                de servicios de automotor y mecánica ligera para satisfacer todas tus necesidades.</p>
         </div>
     </section>
 
+
     <!-- Cards Bootstrap -->
 
-<section class="section__servicios-cards">
-    <div class="row row-cols-1 row-cols-md-3 g-md-4 gy-2 px-md-5">
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top" src="./img/control-de-aceite.jpg" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">Mantenimiento y Servicios Programados</h3>
-                    <ul>
-                        <li>Cambio de aceite y filtros</li>
-                        <li>Reemplazo de bujías y cables de encendido</li>
-                        <li>Inspección y ajuste de frenos</li>
-                        <li>Cambio de correas y tensores</li>
-                        <li>Servicio de transmisión</li>
-                    </ul>
+    <section class="section__servicios-cards">
+        <div class="row row-cols-1 row-cols-md-3 g-md-4 gy-2 px-md-5">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/control-de-aceite.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Mantenimiento y Servicios Programados</h3>
+                        <ul>
+                            <li>Cambio de aceite y filtros</li>
+                            <li>Reemplazo de bujías y cables de encendido</li>
+                            <li>Inspección y ajuste de frenos</li>
+                            <li>Cambio de correas y tensores</li>
+                            <li>Servicio de transmisión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/hombre-trabajando-en-motor.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Reparaciones Mecánicas</h3>
+                        <ul>
+                            <li>Reparación y reemplazo de motores</li>
+                            <li>Sistemas de suspensión y dirección</li>
+                            <li>Reparación de sistemas de escape</li>
+                            <li>Solución de problemas eléctricos</li>
+                            <li>Reparación y reemplazo de sistemas de climatización</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="./img/frenos-neumaticos.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Neumáticos y Frenos</h3>
+                        <ul>
+                            <li>Cambio y balanceo de neumáticos</li>
+                            <li>Reparación y reemplazo de frenos</li>
+                            <li>Alineación de ruedas y suspensión</li>
+                            <li>Inspección de presión y desgaste de neumáticos</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top" src="./img/hombre-trabajando-en-motor.jpg" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">Reparaciones Mecánicas</h3>
-                    <ul>
-                        <li>Reparación y reemplazo de motores</li>
-                        <li>Sistemas de suspensión y dirección</li>
-                        <li>Reparación de sistemas de escape</li>
-                        <li>Solución de problemas eléctricos</li>
-                        <li>Reparación y reemplazo de sistemas de climatización</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img class="card-img-top" src="./img/frenos-neumaticos.jpg" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">Neumáticos y Frenos</h3>
-                    <ul>
-                        <li>Cambio y balanceo de neumáticos</li>
-                        <li>Reparación y reemplazo de frenos</li>
-                        <li>Alineación de ruedas y suspensión</li>
-                        <li>Inspección de presión y desgaste de neumáticos</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-    <section class="section__btn-presu">
-        <a href="#contacto" class="proveedores__btn btn btn-light">Pedí tu presupuesto</a>
+    <section class="section__presupuesto">
+        <a href="#contacto" class="section__presupuesto-btn btn btn-light">Pedí tu presupuesto</a>
     </section>
 
 
@@ -148,47 +148,53 @@
     <section class="section__proveedores" id="proveedores">
         <div class="proveedores__container">
             <div class="proveedores__text">
-            <h2>Proveedores</h2>
-            <p>Las mejores marcas de autopartes, repuestos y neumáticos para tu auto.</p>
+                <h2 class="proveedores__text__title">Proveedores</h2>
+                <p class="proveedores__text__description">Las mejores marcas de autopartes, repuestos y neumáticos para
+                    tu auto.</p>
             </div>
             <div class="proveedores__galeria">
-                <img class="proveedores__img" src="./img/logo-proveedores1.png" alt="">
-                <img class="proveedores__img" src="./img/logo-proveedores2.png" alt="">
-                <img class="proveedores__img" src="./img/logo-proveedores3.png" alt="">
-                <img class="proveedores__img" src="./img/logo-proveedores4.png" alt="">
-                <img class="proveedores__img" src="./img/logo-proveedores5.png" alt="">
-                <img class="proveedores__img" src="./img/logo-proveedores6.png" alt="">
+                <img class="proveedores__galeria__img" src="./img/logo-proveedores1.png" alt="">
+                <img class="proveedores__galeria__img" src="./img/logo-proveedores2.png" alt="">
+                <img class="proveedores__galeria__img" src="./img/logo-proveedores3.png" alt="">
+                <img class="proveedores__galeria__img" src="./img/logo-proveedores4.png" alt="">
+                <img class="proveedores__galeria__img" src="./img/logo-proveedores5.png" alt="">
+                <img class="proveedores__galeria__img" src="./img/logo-proveedores6.png" alt="">
             </div>
-            </div>
+        </div>
 
     </section>
 
     <!-- Inicio Contacto -->
 
-    <section id="contacto">
+    <section id="contacto" class="section__contacto">
         <div class="contacto__container">
-            <div class="contacto__container-mapa">
-                <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13586.32045289005!2d-64.42913200000001!3d-31.645345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d57527d91f0df%3A0x12b346d18d7f4f46!2sParaguay%201267%2C%20X5186GHY%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1689118919876!5m2!1ses-419!2sar" height="100%" width="100%" style="border:0; justify-self: flex-start;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacto__box">
+                <iframe class="contacto__box__mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13586.32045289005!2d-64.42913200000001!3d-31.645345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d57527d91f0df%3A0x12b346d18d7f4f46!2sParaguay%201267%2C%20X5186GHY%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1689118919876!5m2!1ses-419!2sar"
+                    height="100%" width="100%" style="border:0; justify-self: flex-start;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contacto__formulario">
-                <div class="contacto__text">
+                <div class="contacto__formulario__text">
                     <h2>Dejanos tu consulta</h2>
                     <p>Estaremos contactandonos con vos a la brevedad</p>
                 </div>
                 <form action="" method="POST">
                     <label for="nombre" class="sr-only">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" class="form-input">
-        
+
                     <label for="telefono" class="sr-only">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" required placeholder="Tu teléfono" class="form-input">
-        
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Tu teléfono"
+                        class="form-input">
+
                     <label for="email" class="sr-only">Correo electrónico</label>
                     <input type="email" id="email" name="email" required placeholder="Tu email" class="form-input">
-        
+
                     <label for="consulta" class="sr-only">Consulta</label><br>
-                    <textarea id="consulta" name="consulta" rows="3" required placeholder="Escribí acá tu consulta" class="form-input"></textarea>
-                    
-        
+                    <textarea id="consulta" name="consulta" rows="3" required placeholder="Escribí acá tu consulta"
+                        class="form-input"></textarea>
+
+
                     <input type="submit" value="Enviar" class="btn btn-light">
 
                 </form>
@@ -203,7 +209,7 @@
         <div class="footer__container">
             <div class="footer__logo">
                 <a href="/index.html">
-                <img src=".\img\logo-rv-servicios-del-automotor.png" alt="Logo">
+                    <img src=".\img\logo-rv-servicios-del-automotor.png" alt="Logo">
                 </a>
             </div>
             <div class="footer__links">
@@ -212,8 +218,9 @@
                 <a href="tel:+543547479432">Teléfono</a>
             </div>
             <div class="footer__copyright">
-                <p>Copyright. Desarrollado por <a href="https://rociomartinez.com.ar">Rocío Martínez</a>. Todos los derechos
-                reservados.</p>
+                <p>Copyright. Desarrollado por <a href="https://rociomartinez.com.ar">Rocío Martínez</a>. Todos los
+                    derechos
+                    reservados.</p>
             </div>
         </div>
     </footer>

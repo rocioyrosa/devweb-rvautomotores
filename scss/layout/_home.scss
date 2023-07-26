@@ -1,0 +1,311 @@
+body {
+    background-color: $color-secondary;
+}
+
+p,
+form label {
+    @include body-text-styles;
+}
+
+
+//main section banner
+
+.banner {
+    background-image: url("../img/taller-mecanico.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 680px;
+    width: 8;
+    z-index: 2;
+    @include center-element;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        height: 680px;
+        background: radial-gradient(circle, rgba(11, 11, 34, 1) 25%, rgba(46, 40, 158, 1) 58%, rgba(255, 255, 255, 1) 97%);
+        opacity: 0.7;
+        z-index: 1;
+    }
+
+    &__heading {
+        @include heading-styles;
+
+    }
+
+    &__subheading {
+        @include subheading-styles;
+        color: $color-secondary;
+        text-align: center;
+    }
+}
+
+//section nosotros
+
+.section__nosotros {
+    @include section-padding;
+    display: flex;
+    justify-content: center;
+
+    .nosotros__container {
+        max-width: 1300px;
+        display: grid;
+        grid-template-columns: 35% auto;
+        grid-gap: 40px;
+        align-items: center;
+
+        .nosotros__box__img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .nosotros__content {
+        display: grid;
+        align-items: center;
+        height: fit-content;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section__nosotros {
+        padding-top: 0%;
+
+        .nosotros__container {
+            grid-template-columns: 100%;
+        }
+
+        .nosotros__content {
+            @include padding-lateral-mobile;
+        }
+    }
+
+}
+
+
+//section servicios
+
+.section__servicios {
+    @include section-padding;
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary;
+
+    .servicios__container {
+        max-width: 750px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100%;
+        text-align: center;
+
+        &-title {
+            color: $color-secondary;
+        }
+
+        &-text {
+            color: $color-secondary;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .servicios__container {
+            @include padding-lateral-mobile;
+        }
+    }
+}
+
+// cards servicios
+
+.section__servicios-cards {
+    background-color: $color-primary;
+    @include section-padding (0px, 60px);
+    @include padding-lateral-mobile;
+
+    .card {
+        border: 1px solid $color-primary;
+
+        &-img-top {
+            height: 297px;
+            width: auto;
+            border: none;
+        }
+
+        &-body {
+            border: none;
+            min-height: 220px;
+
+            .card-title {
+                font-size: 20px;
+            }
+
+            li {
+                @include list-item-styles;
+            }
+
+        }
+
+    }
+}
+
+// boton presupuesto
+
+.section__presupuesto {
+    @include center-element;
+    @include section-padding(0px, 60px);
+    background-color: $color-primary;
+}
+
+
+.btn-light {
+    font-family: $font-family-titles;
+    font-weight: map-get($font-weights, normal);
+    padding: 15px 30px 15px 30px;
+    justify-self: center;
+}
+
+// section proveedores
+
+.section__proveedores {
+
+    @include padding-lateral-mobile;
+    @include section-padding;
+    @include center-element;
+
+    .proveedores__container {
+        justify-content: center;
+        max-width: 750px;
+
+        .proveedores__text {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 100%;
+            text-align: center;
+        }
+
+        .proveedores__galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+
+            &__img {
+                height: 180px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .proveedores__text {
+        padding: 0 60px 0 60px;
+    }
+
+    .proveedores__galeria {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 0;
+
+        &__img {
+            max-width: 90%;
+            height: auto;
+            justify-self: center;
+        }
+    }
+
+
+}
+
+// section contacto
+
+.section__contacto {
+    background-color: $color-primary;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100%;
+    margin: 0% 0% 0% 0%;
+}
+
+.contacto__container {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 40px;
+}
+
+.contacto__box {
+    &__mapa {
+        height: 100%;
+        width: 100%;
+        justify-self: left;
+    }
+}
+
+
+.contacto__formulario {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    padding: 50px 20px 60px 20px;
+
+
+    h2,
+    p {
+        color: $color-secondary;
+    }
+
+    form {
+        width: 100%;
+
+        #nombre,
+        #telefono,
+        #email,
+        #consulta {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .contacto__container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contacto__box__mapa {
+        height: 250px;
+        width: 100%;
+        justify-self: left;
+    }
+}
+
+
+
+.form-input {
+    @include text-style($color-grey, $font-family-text, claro, 15px);
+    border-style: none;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

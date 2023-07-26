@@ -1,0 +1,28 @@
+nav {
+    background-color: $color-primary;
+    z-index: 3;
+
+    .logo-header {
+        height: 70px;
+        width: auto;
+    }
+
+    .navbar-toggler {
+        line-height: 0;
+        color: $color-primary;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .navbar-toggler-icon {
+        color: $color-primary;
+        background-image: url(../img/menu.svg);
+    }
+
+    .nav-link {
+        @include text-style($color-secondary,$font-family-titles,claro,$font-size-base);
+    }
+
+}
+
+

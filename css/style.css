@@ -1,445 +1,312 @@
-/* reseteo de body a full screen */
-* {
-    margin: 0;
-    padding: ;
-}
-
-/* estilo header, imagen y enlaces */
-
 nav {
-    background-color: #222852;
-    z-index: 3
-}
-
-.logo-header {
+  background-color: #222852;
+  z-index: 3; }
+  nav .logo-header {
     height: 70px;
-    width: auto;
-}
-
-.nav-link {
-    color: #ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-
-}
-
-.navbar-toggler {
+    width: auto; }
+  nav .navbar-toggler {
     line-height: 0;
     color: #222852;
     border: 0;
-    border-radius: 0;
-}
-
-.navbar-toggler-icon {
+    border-radius: 0; }
+  nav .navbar-toggler-icon {
     color: #222852;
-    background-image: url(../img/menu.svg);
-}
+    background-image: url(../img/menu.svg); }
+  nav .nav-link {
+    color: #ececf1;
+    font-family: "Rubik", sans-serif, sans-serif;
+    font-weight: claro;
+    font-size: 16px; }
 
-
-/* estilos textos y principales*/
-
-body {
-    background-color: #ececf1;
-}
-
-/* bannner principal */
-main {
-    background-image: url("../img/taller-mecanico.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 680px;
-    width: 8;
+/* estilos de footer */
+.footer__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+  padding: 50px 30px 20px 30px;
+  background-color: #0b0b22; }
+  .footer__container .footer__logo img {
+    height: 90px;
+    width: auto; }
+  .footer__container .footer__links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
+    justify-content: flex-end;
+    gap: 10px;
+    grid-column: 3; }
+    .footer__container .footer__links a {
+      text-decoration: none;
+      text-align: right;
+      color: #ececf1;
+      font-family: "Inter", sans-serif, sans-serif;
+      font-weight: normal;
+      font-size: 16px; }
+  .footer__container .footer__copyright {
+    grid-column: 2; }
+    .footer__container .footer__copyright p {
+      color: #ececf1;
+      font-size: 12px; }
+  @media (max-width: 768px) {
+    .footer__container .footer__container {
+      grid-template-columns: auto;
+      text-align: center;
+      row-gap: 15px; }
+    .footer__container .footer__logo {
+      align-self: center; }
+    .footer__container .footer__links,
+    .footer__container .footer__copyright {
+      grid-column: 1 / -1;
+      padding-top: 20px; }
+    .footer__container .footer__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .footer__container .footer__links a {
+        text-align: center;
+        align-items: center; } }
 
-main::before {
+body {
+  background-color: #ececf1; }
+
+p,
+form label {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+.banner {
+  background-image: url("../img/taller-mecanico.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  width: 8;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner::before {
     content: "";
     position: absolute;
     top: 95px;
     left: 0;
     width: 100%;
     height: 680px;
-    background: radial-gradient(circle, rgba(11, 11, 34, 1) 25%, rgba(46, 40, 158, 1) 58%, rgba(255, 255, 255, 1) 97%);
+    background: radial-gradient(circle, #0b0b22 25%, #2e289e 58%, white 97%);
     opacity: 0.7;
-    z-index: 1;
-}
-
-/* headings y textos principales */
-
-.main__h1 {
-    color: #ffffff;
-    font-family: 'Rubik', sans-serif;
+    z-index: 1; }
+  .banner__heading {
+    color: #ececf1;
+    font-family: "Rubik", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    z-index: 1;
-    padding-bottom: 10px;
-
-}
-
-.main__h2 {
-    color: #ffffff;
-    font-family: 'Rubik', sans-serif;
+    z-index: 1; }
+  .banner__subheading {
+    color: #333366;
+    font-family: "Rubik", sans-serif;
     font-size: 24px;
     font-weight: 400;
-    text-align: center;
     z-index: 1;
-
-}
-
-
-h2,
-h3 {
-    color: #333366;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
-
-p,
-form label {
-    color: #101010;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-
-}
-
-/* section nosotros */
-
+    color: #ececf1;
+    text-align: center; }
 
 .section__nosotros {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.nosotros__container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center; }
+  .section__nosotros .nosotros__container {
     max-width: 1300px;
     display: grid;
     grid-template-columns: 35% auto;
     grid-gap: 40px;
-    align-items: center;
-}
-
-.nosotros__img {
-    width: 100%;
-    height: auto;
-}
-
-.nosotros__content {
+    align-items: center; }
+    .section__nosotros .nosotros__container .nosotros__box__img {
+      width: 100%;
+      height: auto; }
+  .section__nosotros .nosotros__content {
     display: grid;
     align-items: center;
-    height: fit-content;
-}
+    height: fit-content; }
 
 @media (max-width: 768px) {
-    .section__nosotros {
-        padding-top: 0%;
-    }
-
-    .nosotros__container {
-        grid-template-columns: 100%;
-    }
-
-    .nosotros__content {
-        padding: 0% 20px 0% 20px;
-    }
-}
-
-/* section servicios */
+  .section__nosotros {
+    padding-top: 0%; }
+    .section__nosotros .nosotros__container {
+      grid-template-columns: 100%; }
+    .section__nosotros .nosotros__content {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .section__servicios {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: center;
-    background-color: #222852;
-}
-
-
-.servicios__container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #222852; }
+  .section__servicios .servicios__container {
     max-width: 750px;
     display: grid;
     align-items: center;
     grid-template-columns: 100%;
-    text-align: center;
-}
+    text-align: center; }
+    .section__servicios .servicios__container-title {
+      color: #ececf1; }
+    .section__servicios .servicios__container-text {
+      color: #ececf1; }
+  @media (max-width: 768px) {
+    .section__servicios .servicios__container {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
-.servicios__text {
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .servicios__container {
-        padding: 0% 20px 0% 20px;
-    }
-}
-
-
-/* cards */
 .section__servicios-cards {
-    background-color: #222852;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-} 
+  background-color: #222852;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .section__servicios-cards .card {
+    border: 1px solid #222852; }
+    .section__servicios-cards .card-img-top {
+      height: 297px;
+      width: auto;
+      border: none; }
+    .section__servicios-cards .card-body {
+      border: none;
+      min-height: 220px; }
+      .section__servicios-cards .card-body .card-title {
+        font-size: 20px; }
+      .section__servicios-cards .card-body li {
+        color: black;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: left; }
 
-.card-img-top {
-    height: 297px;
-    width: auto;
-    border: 0;
-    border-color: #222852;
-} 
-
-.card {
-    border: 1;
-    border-color: #222852;
-}
-
-.card-body {
-    border: 0;
-    border-color: #222852;
-}
-
-.card-title {
-    font-size: 20px;
-}
-
-
-/* listas cards*/
-
-li {
-    color: #101010;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    text-align: left;
-}
-
-
-/* boton de pedir presupuesto */
-.section__btn-presu {
-    display: flex;
-    justify-content: center;
-    background-color: #222852;
-    padding-bottom: 60px;
-}
+.section__presupuesto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background-color: #222852; }
 
 .btn-light {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    padding: 15px 30px;
-    justify-self: center;
-}
-
-
-
-/* tamaño de imágenes de seccion proveedores */
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  padding: 15px 30px 15px 30px;
+  justify-self: center; }
 
 .section__proveedores {
-    text-align: center;
-    display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section__proveedores .proveedores__container {
     justify-content: center;
-    padding: 80px 20px 60px 20px;
-    flex-wrap: nowrap;
-}
-
-.proveedores__container {
-    justify-content: center;
-}
-
-.proveedores__galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-}
-
-.proveedores__img {
-    height: 180px;
-    width: auto;
-}
+    max-width: 750px; }
+    .section__proveedores .proveedores__container .proveedores__text {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 100%;
+      text-align: center; }
+    .section__proveedores .proveedores__container .proveedores__galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center; }
+      .section__proveedores .proveedores__container .proveedores__galeria__img {
+        height: 180px;
+        width: auto; }
 
 @media (max-width: 768px) {
-    .proveedores__text {
-        padding: 0 60px 0 60px;
-    }
+  .proveedores__text {
+    padding: 0 60px 0 60px; }
+  .proveedores__galeria {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 0; }
+    .proveedores__galeria__img {
+      max-width: 90%;
+      height: auto;
+      justify-self: center; } }
 
-    .proveedores__galeria {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        grid-gap: 0;
-    }
-
-    .proveedores__img {
-        max-width: 90%;
-        height: auto;
-        justify-self: center;
-    }
-
-}
-
-/* formularios */
-
-#contacto {
-    margin: 0 auto;
-    background-color: #222852;
-}
+.section__contacto {
+  background-color: #222852;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100%;
+  margin: 0% 0% 0% 0%; }
 
 .contacto__container {
-    max-width: 1300px;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 40px;
-    justify-content: left;
-}
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 40px; }
 
-.contacto__mapa {
-    height: 100%;
-    width: 100%;
-    justify-self: left;
-}
-
-.contacto__text h2,
-.contacto__text p {
-    color: #fff;
-}
+.contacto__box__mapa {
+  height: 100%;
+  width: 100%;
+  justify-self: left; }
 
 .contacto__formulario {
-    text-align: left;
-    display: grid;
-    grid-template-columns: 100%;
-    align-items: center;
-}
-
+  text-align: left;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  padding: 50px 20px 60px 20px; }
+  .contacto__formulario h2,
+  .contacto__formulario p {
+    color: #ececf1; }
+  .contacto__formulario form {
+    width: 100%; }
+    .contacto__formulario form #nombre,
+    .contacto__formulario form #telefono,
+    .contacto__formulario form #email,
+    .contacto__formulario form #consulta {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box; }
 
 @media (max-width: 1080px) {
-    .contacto__container {
-        grid-template-columns: 1fr;
-    }
-
-    .contacto__mapa {
-        height: 250px;
-        width: 100%;
-        justify-self: left;
-    }
-}
-
-.contacto__formulario form {
+  .contacto__container {
+    grid-template-columns: 1fr; }
+  .contacto__box__mapa {
+    height: 250px;
     width: 100%;
-}
-
-.contacto__formulario #nombre,
-.contacto__formulario #telefono,
-.contacto__formulario #email,
-.contacto__formulario #consulta {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.contacto__formulario {
-    padding: 50px 20px 60px 20px;
-}
+    justify-self: left; } }
 
 .form-input {
-    color: #3f3f3f;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    border-style: none;
-    border-color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
+  color: #3f3f3f;
+  font-family: "Inter", sans-serif, sans-serif;
+  font-weight: claro;
+  font-size: 15px;
+  border-style: none;
+  border-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0; }
 
-
-/* estilos de footer */
-.footer__container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    justify-items: center;
-    padding: 50px 30px 20px 30px;
-    background-color: #0b0b22;
-}
-
-.footer__logo img {
-    height: 90px;
-    width: auto;
-}
-
-.footer__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.footer__links a {
-    color: #ffffff;
-    text-decoration: none;
-    text-align: right;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.footer__links {
-    grid-column: 3;
-}
-
-.footer__copyright {
-    grid-column: 2;
-}
-
-.footer__copyright p {
-    color: #fff;
-    font-size: 12px;
-}
-
-@media (max-width: 768px) {
-    .footer__container {
-        grid-template-columns: auto;
-        text-align: center;
-        row-gap: 15px;
-    }
-
-    .footer__links,
-    .footer__copyright {
-        grid-column: 1 / -1;
-        padding-top: 20px;
-    }
-
-    .footer__links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer__links a {
-        text-align: center;
-        align-items: center;
-    }
-}
+* {
+  margin: 0;
+  padding: 0; }

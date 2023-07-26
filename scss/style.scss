@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+//imports utilities
+
+@import "./utilities/variables";
+@import "./utilities/_mixins";
+@import "./utilities/maps";
+
+
+//imports components
+
+@import "./components/header";
+@import "./components/footer";
+
+//imports layout home
+
+@import "./layout/home";
+
+
+// reseteo de body a full screen
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
