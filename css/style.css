@@ -229,13 +229,13 @@ form label {
         width: auto; }
 
 @media (max-width: 768px) {
-  .proveedores__text {
+  .section__proveedores .proveedores__container .proveedores__text {
     padding: 0 60px 0 60px; }
-  .proveedores__galeria {
+  .section__proveedores .proveedores__container .proveedores__galeria {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 0; }
-    .proveedores__galeria__img {
+    .section__proveedores .proveedores__container .proveedores__galeria__img {
       max-width: 90%;
       height: auto;
       justify-self: center; } }
