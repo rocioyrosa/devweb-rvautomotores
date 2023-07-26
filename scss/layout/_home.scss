@@ -68,9 +68,13 @@ form label {
         display: grid;
         align-items: center;
         height: fit-content;
+
+        &-title {
+            @include subheading-styles;
+            font-size: 26px;
+        }
     }
 }
-
 
 @media (max-width: 768px) {
     .section__nosotros {
@@ -104,6 +108,8 @@ form label {
         text-align: center;
 
         &-title {
+            @include subheading-styles;
+            font-size: 26px;
             color: $color-secondary;
         }
 
@@ -140,7 +146,9 @@ form label {
             min-height: 220px;
 
             .card-title {
-                font-size: 20px;
+                @include subheading-styles;
+                font-size: 22px;
+                font-weight: map-get($font-weights, normal)
             }
 
             li {
@@ -162,8 +170,8 @@ form label {
 
 
 .btn-light {
-    font-family: $font-family-titles;
-    font-weight: map-get($font-weights, normal);
+    @include subheading-styles;
+    font-size: 18px;
     padding: 15px 30px 15px 30px;
     justify-self: center;
 }
@@ -185,6 +193,11 @@ form label {
             align-items: center;
             grid-template-columns: 100%;
             text-align: center;
+
+            &__title {
+                @include subheading-styles;
+                font-size: 26px;
+            }
         }
 
         .proveedores__galeria {
@@ -258,9 +271,13 @@ form label {
     align-items: center;
     padding: 50px 20px 60px 20px;
 
-
-    h2,
     p {
+        color: $color-secondary;
+    }
+
+    h2 {
+        @include subheading-styles;
+        font-size: 26px;
         color: $color-secondary;
     }
 

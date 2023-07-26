@@ -110,7 +110,7 @@ form label {
     color: #333366;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     z-index: 1;
     color: #ececf1;
     text-align: center; }
@@ -133,6 +133,13 @@ form label {
     display: grid;
     align-items: center;
     height: fit-content; }
+    .section__nosotros .nosotros__content-title {
+      color: #333366;
+      font-family: "Rubik", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      z-index: 1;
+      font-size: 26px; }
 
 @media (max-width: 768px) {
   .section__nosotros {
@@ -156,6 +163,12 @@ form label {
     grid-template-columns: 100%;
     text-align: center; }
     .section__servicios .servicios__container-title {
+      color: #333366;
+      font-family: "Rubik", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      z-index: 1;
+      font-size: 26px;
       color: #ececf1; }
     .section__servicios .servicios__container-text {
       color: #ececf1; }
@@ -180,7 +193,13 @@ form label {
       border: none;
       min-height: 220px; }
       .section__servicios-cards .card-body .card-title {
-        font-size: 20px; }
+        color: #333366;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        z-index: 1;
+        font-size: 22px;
+        font-weight: 400; }
       .section__servicios-cards .card-body li {
         color: black;
         font-family: "Inter", sans-serif;
@@ -198,8 +217,12 @@ form label {
   background-color: #222852; }
 
 .btn-light {
+  color: #333366;
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 18px;
   padding: 15px 30px 15px 30px;
   justify-self: center; }
 
@@ -220,6 +243,13 @@ form label {
       align-items: center;
       grid-template-columns: 100%;
       text-align: center; }
+      .section__proveedores .proveedores__container .proveedores__text__title {
+        color: #333366;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        z-index: 1;
+        font-size: 26px; }
     .section__proveedores .proveedores__container .proveedores__galeria {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -264,8 +294,15 @@ form label {
   grid-template-columns: 100%;
   align-items: center;
   padding: 50px 20px 60px 20px; }
-  .contacto__formulario h2,
   .contacto__formulario p {
+    color: #ececf1; }
+  .contacto__formulario h2 {
+    color: #333366;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 1;
+    font-size: 26px;
     color: #ececf1; }
   .contacto__formulario form {
     width: 100%; }
@@ -306,7 +343,3 @@ form label {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0; }
-
-* {
-  margin: 0;
-  padding: 0; }
