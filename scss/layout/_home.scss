@@ -68,6 +68,12 @@ form label {
         display: grid;
         align-items: center;
         height: fit-content;
+
+        &-title {
+            @include subheading-styles;
+            font-size: 30px;
+            font-weight: map-get($font-weights, negrita);
+        }
     }
 }
 
@@ -104,7 +110,11 @@ form label {
         text-align: center;
 
         &-title {
+            @include subheading-styles;
+            font-size: 30px;
+            font-weight: map-get($font-weights, negrita);
             color: $color-secondary;
+
         }
 
         &-text {
@@ -163,7 +173,7 @@ form label {
 
 .btn-light {
     font-family: $font-family-titles;
-    font-weight: map-get($font-weights, normal);
+    font-weight: map-get($font-weights, negrita);
     padding: 15px 30px 15px 30px;
     justify-self: center;
 }
@@ -185,6 +195,13 @@ form label {
             align-items: center;
             grid-template-columns: 100%;
             text-align: center;
+
+            &__title {
+                @include subheading-styles;
+                font-size: 30px;
+                font-weight: map-get($font-weights, negrita);
+
+            }
         }
 
         .proveedores__galeria {
@@ -245,7 +262,6 @@ form label {
     }
 }
 
-
 .contacto__formulario {
     text-align: left;
     display: grid;
@@ -253,25 +269,31 @@ form label {
     align-items: center;
     padding: 50px 20px 60px 20px;
 
-
-    h2,
     p {
         color: $color-secondary;
     }
 
-    form {
-        width: 100%;
-
-        #nombre,
-        #telefono,
-        #email,
-        #consulta {
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
-        }
+    h2 {
+        @include subheading-styles;
+        font-size: 30px;
+        font-weight: map-get($font-weights, negrita);
+        color: $color-secondary;
     }
 }
+
+form {
+    width: 100%;
+
+    #nombre,
+    #telefono,
+    #email,
+    #consulta {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 
 @media (max-width: 1080px) {
     .contacto__container {

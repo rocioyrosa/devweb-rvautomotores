@@ -133,6 +133,14 @@ form label {
     display: grid;
     align-items: center;
     height: fit-content; }
+    .section__nosotros .nosotros__content-title {
+      color: #333366;
+      font-family: "Rubik", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      z-index: 1;
+      font-size: 30px;
+      font-weight: 600; }
 
 @media (max-width: 768px) {
   .section__nosotros {
@@ -156,6 +164,13 @@ form label {
     grid-template-columns: 100%;
     text-align: center; }
     .section__servicios .servicios__container-title {
+      color: #333366;
+      font-family: "Rubik", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      z-index: 1;
+      font-size: 30px;
+      font-weight: 600;
       color: #ececf1; }
     .section__servicios .servicios__container-text {
       color: #ececf1; }
@@ -199,7 +214,7 @@ form label {
 
 .btn-light {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   padding: 15px 30px 15px 30px;
   justify-self: center; }
 
@@ -220,6 +235,14 @@ form label {
       align-items: center;
       grid-template-columns: 100%;
       text-align: center; }
+      .section__proveedores .proveedores__container .proveedores__text__title {
+        color: #333366;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        z-index: 1;
+        font-size: 30px;
+        font-weight: 600; }
     .section__proveedores .proveedores__container .proveedores__galeria {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -264,18 +287,27 @@ form label {
   grid-template-columns: 100%;
   align-items: center;
   padding: 50px 20px 60px 20px; }
-  .contacto__formulario h2,
   .contacto__formulario p {
     color: #ececf1; }
-  .contacto__formulario form {
-    width: 100%; }
-    .contacto__formulario form #nombre,
-    .contacto__formulario form #telefono,
-    .contacto__formulario form #email,
-    .contacto__formulario form #consulta {
-      display: inline-block;
-      width: 100%;
-      box-sizing: border-box; }
+  .contacto__formulario h2 {
+    color: #333366;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ececf1; }
+
+form {
+  width: 100%; }
+  form #nombre,
+  form #telefono,
+  form #email,
+  form #consulta {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box; }
 
 @media (max-width: 1080px) {
   .contacto__container {
