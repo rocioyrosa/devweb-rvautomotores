@@ -110,7 +110,7 @@ form label {
     color: #333366;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     z-index: 1;
     color: #ececf1;
     text-align: center; }
@@ -137,10 +137,16 @@ form label {
       color: #333366;
       font-family: "Rubik", sans-serif;
       font-size: 24px;
+<<<<<<< HEAD
       font-weight: 400;
       z-index: 1;
       font-size: 30px;
       font-weight: 600; }
+=======
+      font-weight: 600;
+      z-index: 1;
+      font-size: 26px; }
+>>>>>>> nueva-rama
 
 @media (max-width: 768px) {
   .section__nosotros {
@@ -167,10 +173,16 @@ form label {
       color: #333366;
       font-family: "Rubik", sans-serif;
       font-size: 24px;
+<<<<<<< HEAD
       font-weight: 400;
       z-index: 1;
       font-size: 30px;
       font-weight: 600;
+=======
+      font-weight: 600;
+      z-index: 1;
+      font-size: 26px;
+>>>>>>> nueva-rama
       color: #ececf1; }
     .section__servicios .servicios__container-text {
       color: #ececf1; }
@@ -195,7 +207,13 @@ form label {
       border: none;
       min-height: 220px; }
       .section__servicios-cards .card-body .card-title {
-        font-size: 20px; }
+        color: #333366;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        z-index: 1;
+        font-size: 22px;
+        font-weight: 400; }
       .section__servicios-cards .card-body li {
         color: black;
         font-family: "Inter", sans-serif;
@@ -213,8 +231,16 @@ form label {
   background-color: #222852; }
 
 .btn-light {
+  color: #333366;
   font-family: "Rubik", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
+=======
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 18px;
+>>>>>>> nueva-rama
   padding: 15px 30px 15px 30px;
   justify-self: center; }
 
@@ -239,10 +265,16 @@ form label {
         color: #333366;
         font-family: "Rubik", sans-serif;
         font-size: 24px;
+<<<<<<< HEAD
         font-weight: 400;
         z-index: 1;
         font-size: 30px;
         font-weight: 600; }
+=======
+        font-weight: 600;
+        z-index: 1;
+        font-size: 26px; }
+>>>>>>> nueva-rama
     .section__proveedores .proveedores__container .proveedores__galeria {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -252,13 +284,13 @@ form label {
         width: auto; }
 
 @media (max-width: 768px) {
-  .proveedores__text {
+  .section__proveedores .proveedores__container .proveedores__text {
     padding: 0 60px 0 60px; }
-  .proveedores__galeria {
+  .section__proveedores .proveedores__container .proveedores__galeria {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 0; }
-    .proveedores__galeria__img {
+    .section__proveedores .proveedores__container .proveedores__galeria__img {
       max-width: 90%;
       height: auto;
       justify-self: center; } }
@@ -293,6 +325,7 @@ form label {
     color: #333366;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
+<<<<<<< HEAD
     font-weight: 400;
     z-index: 1;
     font-size: 30px;
@@ -308,6 +341,21 @@ form {
     display: inline-block;
     width: 100%;
     box-sizing: border-box; }
+=======
+    font-weight: 600;
+    z-index: 1;
+    font-size: 26px;
+    color: #ececf1; }
+  .contacto__formulario form {
+    width: 100%; }
+    .contacto__formulario form #nombre,
+    .contacto__formulario form #telefono,
+    .contacto__formulario form #email,
+    .contacto__formulario form #consulta {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box; }
+>>>>>>> nueva-rama
 
 @media (max-width: 1080px) {
   .contacto__container {
@@ -338,5 +386,8 @@ form {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0; }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> nueva-rama
