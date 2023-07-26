@@ -34,33 +34,42 @@
             color: $color-secondary;
             font-size: 12px;
         }
+
+        a {
+            @include text-style($color-secondary, $font-family-text, normal, 12px)
+        }
     }
 
+
+}
+
+
+.footer__container {
     @media (max-width: 768px) {
-        .footer__container {
-            grid-template-columns: auto;
-            text-align: center;
-            row-gap: 15px;
-        }
-        .footer__logo {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 15px;
+
+        .footer__logo img {
             align-self: center;
-        }
-
-        .footer__links,
-        .footer__copyright {
-            grid-column: 1 / -1;
-            padding-top: 20px;
-        }
-
-        .footer__links {
             @include center-element;
-            gap: 10px;
-
-            a {
-                text-align: center;
-                align-items: center;
-            }
         }
     }
+    
 
+    .footer__links,
+    .footer__copyright {
+        grid-column: 1 / -1;
+        padding-top: 20px;
+    }
+
+    .footer__links {
+        @include center-element;
+        gap: 10px;
+
+        a {
+            text-align: center;
+            align-items: center;
+        }
+    }
 }

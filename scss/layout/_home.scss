@@ -40,6 +40,11 @@ form label {
         @include subheading-styles;
         color: $color-secondary;
         text-align: center;
+        font-weight: map-get($font-weights, normal);
+    }
+
+    @media (max-width: 768px){
+        @include padding-lateral-mobile;
     }
 }
 
@@ -293,7 +298,7 @@ form {
         box-sizing: border-box;
     }
 }
-
+}
 
 @media (max-width: 1080px) {
     .contacto__container {

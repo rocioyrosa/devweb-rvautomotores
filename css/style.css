@@ -47,26 +47,38 @@ nav {
     .footer__container .footer__copyright p {
       color: #ececf1;
       font-size: 12px; }
-  @media (max-width: 768px) {
-    .footer__container .footer__container {
-      grid-template-columns: auto;
-      text-align: center;
-      row-gap: 15px; }
-    .footer__container .footer__logo {
-      align-self: center; }
-    .footer__container .footer__links,
-    .footer__container .footer__copyright {
-      grid-column: 1 / -1;
-      padding-top: 20px; }
-    .footer__container .footer__links {
+    .footer__container .footer__copyright a {
+      color: #ececf1;
+      font-family: "Inter", sans-serif, sans-serif;
+      font-weight: normal;
+      font-size: 12px; }
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 15px; }
+    .footer__container .footer__logo img {
+      align-self: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 10px; }
-      .footer__container .footer__links a {
-        text-align: center;
-        align-items: center; } }
+      align-items: center; } }
+
+.footer__container .footer__links,
+.footer__container .footer__copyright {
+  grid-column: 1 / -1;
+  padding-top: 20px; }
+
+.footer__container .footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
+  .footer__container .footer__links a {
+    text-align: center;
+    align-items: center; }
 
 body {
   background-color: #ececf1; }
@@ -113,7 +125,12 @@ form label {
     font-weight: 600;
     z-index: 1;
     color: #ececf1;
-    text-align: center; }
+    text-align: center;
+    font-weight: 400; }
+  @media (max-width: 768px) {
+    .banner {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .section__nosotros {
   padding-top: 80px;
@@ -137,16 +154,9 @@ form label {
       color: #333366;
       font-family: "Rubik", sans-serif;
       font-size: 24px;
-<<<<<<< HEAD
-      font-weight: 400;
-      z-index: 1;
-      font-size: 30px;
-      font-weight: 600; }
-=======
       font-weight: 600;
       z-index: 1;
       font-size: 26px; }
->>>>>>> nueva-rama
 
 @media (max-width: 768px) {
   .section__nosotros {
@@ -173,16 +183,9 @@ form label {
       color: #333366;
       font-family: "Rubik", sans-serif;
       font-size: 24px;
-<<<<<<< HEAD
-      font-weight: 400;
-      z-index: 1;
-      font-size: 30px;
-      font-weight: 600;
-=======
       font-weight: 600;
       z-index: 1;
       font-size: 26px;
->>>>>>> nueva-rama
       color: #ececf1; }
     .section__servicios .servicios__container-text {
       color: #ececf1; }
@@ -233,14 +236,10 @@ form label {
 .btn-light {
   color: #333366;
   font-family: "Rubik", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-=======
   font-size: 24px;
   font-weight: 600;
   z-index: 1;
   font-size: 18px;
->>>>>>> nueva-rama
   padding: 15px 30px 15px 30px;
   justify-self: center; }
 
@@ -265,16 +264,9 @@ form label {
         color: #333366;
         font-family: "Rubik", sans-serif;
         font-size: 24px;
-<<<<<<< HEAD
-        font-weight: 400;
-        z-index: 1;
-        font-size: 30px;
-        font-weight: 600; }
-=======
         font-weight: 600;
         z-index: 1;
         font-size: 26px; }
->>>>>>> nueva-rama
     .section__proveedores .proveedores__container .proveedores__galeria {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -325,23 +317,6 @@ form label {
     color: #333366;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
-<<<<<<< HEAD
-    font-weight: 400;
-    z-index: 1;
-    font-size: 30px;
-    font-weight: 600;
-    color: #ececf1; }
-
-form {
-  width: 100%; }
-  form #nombre,
-  form #telefono,
-  form #email,
-  form #consulta {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box; }
-=======
     font-weight: 600;
     z-index: 1;
     font-size: 26px;
@@ -355,7 +330,6 @@ form {
       display: inline-block;
       width: 100%;
       box-sizing: border-box; }
->>>>>>> nueva-rama
 
 @media (max-width: 1080px) {
   .contacto__container {
@@ -386,8 +360,3 @@ form {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0; }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> nueva-rama
