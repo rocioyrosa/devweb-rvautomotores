@@ -48,6 +48,8 @@ form label {
     }
 }
 
+
+
 //section nosotros
 
 .section__nosotros {
@@ -87,6 +89,12 @@ form label {
 
         .nosotros__container {
             grid-template-columns: 100%;
+
+            [data-aos] {
+                opacity: 1;
+                transition: none;
+                transform: none;
+            }
         }
 
         .nosotros__content {
@@ -181,6 +189,10 @@ form label {
     padding: 15px 30px 15px 30px;
     justify-self: center;
 }
+.btn-light:hover {
+    transform: scale(1.1,1.1);
+    transition: all 2s;
+}
 
 // section proveedores
 
@@ -233,10 +245,17 @@ form label {
                 align-items: center;
                 grid-gap: 0;
 
+                [data-aos] {
+                    opacity: 1;
+                    transition: none;
+                    transform: none;
+                }
+
                 &__img {
                     max-width: 90%;
                     height: auto;
                     justify-self: center;
+
                 }
             }
         }
@@ -336,3 +355,5 @@ form {
     white-space: nowrap;
     border-width: 0;
 }
+
+
