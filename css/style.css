@@ -90,13 +90,14 @@ form label {
   .banner::before {
     content: "";
     position: absolute;
-    top: 95px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 680px;
+    height: 100%;
     background: radial-gradient(circle, #0b0b22 25%, #2e289e 58%, white 97%);
     opacity: 0.7;
-    z-index: 1; }
+    z-index: 1;
+    overflow-inline: hidden; }
   .banner__heading {
     color: #ececf1;
     font-family: "Rubik", sans-serif;

@@ -22,13 +22,14 @@ form label {
     &::before {
         content: "";
         position: absolute;
-        top: 95px;
+        top: 0;
         left: 0;
         width: 100%;
-        height: 680px;
+        height: 100%;
         background: radial-gradient(circle, rgba(11, 11, 34, 1) 25%, rgba(46, 40, 158, 1) 58%, rgba(255, 255, 255, 1) 97%);
         opacity: 0.7;
-        z-index: 1;
+        z-index: 1; 
+        overflow-inline: hidden;
     }
 
     &__heading {
